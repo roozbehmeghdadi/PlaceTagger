@@ -177,6 +177,21 @@ body {
  	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: alternate;
+	width:100%;	
+}
+#iosapp {
+	background:url(../img/App_Store_Badge.png) no-repeat;
+	height:110px;
+	width:318px;
+	display:inline-block;
+	text-indent:-9999px;
+}
+#macapp {
+	background:url(../img/Mac_App_Store_Badge.png) no-repeat;
+	height:110px;
+	width:366px;
+	display:inline-block;
+	text-indent:-9999px;
 	
 }
 #tagline {
