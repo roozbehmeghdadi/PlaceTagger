@@ -60,14 +60,11 @@ body {
 	-webkit-animation-iteration-count: 1;
 	-webkit-animation-direction: alternate;
 	-webkit-animation-play-state: running;
-	
-
 }
 #header .container {
 	position:relative;
 	height:490px;
 
-	
 }
 
 #appstore_icon {
@@ -180,7 +177,7 @@ body {
 	width:100%;	
 }
 #iosapp {
-	background:url(../img/App_Store_Badge.png) no-repeat;
+	background-image:url("../img/App_Store_Badge.png");
 	height:110px;
 	width:318px;
 	display:inline-block;
@@ -221,7 +218,14 @@ footer {
 footer p {
 	padding:20px 0;
 }
-
+#developer {
+	background:url(../img/return7_logo.png) top center no-repeat;
+	width:221px;
+	height:74px;
+	display:block;
+	margin:0 auto;
+	text-indent:-9999px;
+}
 #designer {
 	position:fixed;
 	right:0px;
@@ -295,8 +299,42 @@ footer p {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	#iphone_app {
+		background:url(../img/iphone_app.png) no-repeat;
+		
+	}
+	#ipad_app {
+		left:390px;
+		background:url(../img/ipad_app.png) no-repeat;
+		
+	}
+	#mac_app {
+		background:url(../img/mac_app.png) no-repeat;
+/*		background-size:80%;*/
+		left:-10px;
+	}
+	#logo {
+		background:url(../img/placetagger_logo@2x.png) no-repeat;
+		background-size:355px 68px;
+	}
+	
      #tagline {background: url(../img/tagline@2x.png) no-repeat top center;
-	background-size:50%;
+	background-size:268px 40px;
+	}
+	#iosapp {
+		background:url(../img/App_Store_Badge@2x.png);
+		background-size:318px 110px;
+		
+	}
+	#macapp {
+		background:url(../img/Mac_App_Store_Badge@2x.png) no-repeat;
+		background-size:366px 110px;
+		
+	}
+	#developer {
+		background:url(../img/return7_logo@2x.png) top center no-repeat;
+		background-size:221px 74px;
+
 	}
 }
 
