@@ -44,16 +44,23 @@ body {
 	background:url(../img/purple_textured_bg.png);
 	padding-top:60px;
 	margin-bottom:180px;
-
-	
+	width: 100%;
 }
-
+#developer {
+	background:url(../img/return7_logo.png) top center no-repeat;
+	width:221px;
+	height:74px;
+	display:block;
+	margin:0 auto;
+	text-indent:-9999px;
+}
 #logo {
 	background:url(../img/placetagger_logo.png) no-repeat;
 	text-indent:-9999px;
 	height:68px;
-	width:355px;
+	width:354px;
 	margin:0 auto;
+	background-position:center;
 	padding-bottom:60px;
 	-webkit-animation-name: fadein;
  	-webkit-animation-duration: 1s;
@@ -66,7 +73,19 @@ body {
 	height:490px;
 
 }
-
+#content {
+	width:100%;
+	margin:0 auto;
+}
+#description {
+	width:50%;
+	margin: 0 auto;
+	padding-bottom:40px;
+}
+#description p {
+	font-size:18px;
+	line-height:23px;
+}
 #appstore_icon {
 	background:url(../img/appstoreicon.png);
 	width:130px;
@@ -196,9 +215,9 @@ body {
 	font-weight:bold;
 	color:#394352;
 	background:url(../img/tagline.png) no-repeat top center;
-	height:40px;
+	height:50px;
 	text-align:center;
-	padding:40px 0;
+	padding:50px 0;
 	-webkit-animation-name: fadein;
  	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: 1;
@@ -218,45 +237,6 @@ footer {
 footer p {
 	padding:20px 0;
 }
-#developer {
-	background:url(../img/return7_logo.png) top center no-repeat;
-	width:221px;
-	height:74px;
-	display:block;
-	margin:0 auto;
-	text-indent:-9999px;
-}
-#designer {
-	position:fixed;
-	right:0px;
-	bottom:0px;
-	text-indent: -9999em;
-	overflow: hidden;
-  	text-align: left;
-  	background-image: url('http://www.roozbehmeghdadi.com/logo/ROOZBEHMEGHDADI_logo.png');
-  	background-repeat: no-repeat;
-  	background-position: 0% 0%;
-	height:26px;
-	width:26px;
-	z-index:99999;
-	-webkit-transition: all .3s ease;
-	
-}
-#designer:hover {
-	padding-left:225px;
-	-webkit-transition: all .3s ease;
-	
-	
-}
-#designer a {
-	display:block;
-	height:26px;
-	width:250px;
-	right:0px;
-	top:0;
-	position:absolute;
-	
-}
 
 /*responsive layout*/
 @media (max-width: 480px) {
@@ -267,15 +247,23 @@ footer p {
 	#header {
 		margin-bottom:0;
 		padding-top:20px;
+		width:480px;
 	}
 	#header .container {
-		height:140px;
+		height:130px;
 	}
-	#logo {
-		background-size:70%;
-		background-position:center;
-		width:auto;
-		
+	#content {
+		width:480px;
+		margin:0 auto;
+	}
+	#description {
+		width:90%;
+		margin: 0 auto;
+		padding-bottom:40px;
+	}
+	#description p {
+		font-size:24px;
+		line-height:29px;
 	}
 	#download_links a {
 		margin:20px;
@@ -285,11 +273,29 @@ footer p {
 	}
 }
 
-
-@media (max-width: 1024px) {
-  #app_icon {
-	display:none;
-}
+@media (min-width: 481px) and (max-width: 1024px) {
+	#header {
+		width:1024px;
+	}
+	#header .container {
+		width: 100%;
+	}
+	#content {
+		width:1024px;
+		margin:0 auto;
+	}
+	#description {
+		width:70%;
+		margin: 0 auto;
+		padding-bottom:40px;
+	}
+	#description p {
+		font-size:22px;
+		line-height:27px;
+	}
+ 	#app_icon {
+		display:none;
+	}
 	#iphone_app {
 		top:300px;
 	}
